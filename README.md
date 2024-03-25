@@ -1,4 +1,4 @@
-# 高动态飞行器自抗扰控制系统设计 ADRC control system of highly dynamic aircraft 
+# 高动态飞行器自抗扰控制系统设计 ADRC of highly dynamic aircraft 
 
 本项目对于**高动态飞行器过载控制**系统，提出了基于**角速度/角加速度反馈**的自动驾驶仪设计方案，并设计了**自抗扰控制**系统及其稳定性分析方法。具体包括以下几点：  
 
