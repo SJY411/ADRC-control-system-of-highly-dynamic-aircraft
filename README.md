@@ -5,12 +5,10 @@
 For the control accuracy and stability of the high dynamic aircraft overload control system, the autopilot design scheme based on angular acceleration feedback is proposed, and the Active Disturbance Rejection Control (ADRC) system and its stability analysis method are designed.
 
 * 1.设计了基于角速度和角加速度反馈的PI两回路控制系统方案。
-<p align="center"> 
   
 ![image](https://github.com/SJY411/-ADRC-control-system-/blob/main/img/Body%20Coordinate%20System%20and%20Velocity%20Coordinate%20System%20of%20High%20Dynamic%20Aircraft.png)
 图1 高动态飞行器的机体坐标系和速度坐标系  
 Fig.1 Body Coordinate System and Velocity Coordinate System of High Dynamic Aircraft  
-</p> 
 
 根据高动态飞行器运动和动力学模型，以纵向通道为例设计了两种反馈控制回路，一种是角速度反馈，另一种是角加速度回路。这两种回路均采用过载控制（过载控制是指通过直接测量和控制机体横向过载及其变化率，以操纵其飞行轨迹并按照预定的弹道飞行），且用PI控制。具体原理如图所示：  
 
@@ -26,7 +24,8 @@ Fig.4 two loops in simulink
 
 该部分见ang_acc_control文件。
 
-* 2.基于角加速度反馈设计了自抗扰过载控制方法，并对系统稳定性进行了频域分析。  
+* 2.基于角加速度反馈设计了自抗扰过载控制方法，并对系统稳定性进行了频域分析。
+ 
 关于自抗扰控制（ADRC）建议参考Gao Zhiqiang．Scaling and bandwidth-parameterization based controller turning.  本项目中以高志强老师的LADRC方法为基础，设计了高动态飞行器角加速度反馈的自抗扰控制方法。如下图所示：  
   
 ![image](https://github.com/SJY411/-ADRC-control-system-/blob/main/img/%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%AE%80%E5%8C%96%E5%8E%9F%E7%90%86%E5%9B%BE.png)  
@@ -36,7 +35,7 @@ Fig.4 Simplified schematic diagram of active disturbance rejection control syste
 图5 角加速度反馈自抗扰过载控制原理图  
 Fig.5 Schematic diagram of angular acceleration feedback active disturbance rejection overload control  
 
-该部分见ADRC_acc_control文件。  
+该部分见ADRC_acc_control文件。 其中ADRC_ang_acc_change.slx用于对比ADRC与传统PI控制，ADRC_ESO_feedback_comparison.slx文件为对比ADRC不同的反馈项对应效果。
 
 * 结论：  
 经过仿真校验及稳定性理论分析，得到结论如下：  
@@ -44,6 +43,4 @@ Fig.5 Schematic diagram of angular acceleration feedback active disturbance reje
 (2)在高动态飞行器过载控制系统中加入自抗扰控制器，可对模型的不确定性及干扰进行补偿，明显**提高**了系统的稳定性能；  
 (3)在控制系统参数变化时，自抗扰控制系统的稳定性几乎不受影响，表明其对模型的不确定性有较强的容错率，**相比传统PI控制回路拥有更好的鲁棒性**。  
 
-分析过程不在此处赘述，以上具体参数、模型细节、理论推导均在论文《基于角加速度反馈的自抗扰过载控制系统设计》中，参考网址：(http://www.dhykz.com/CN/10.3969/j.issn.1674-5558.2023.02.013)  
-
-Loading…
+分析过程不在此处赘述，以上具体参数、模型细节、理论推导均在论文《基于角加速度反馈的自抗扰过载控制系统设计》中，参考网址：[http://www.dhykz.com/CN/10.3969/j.issn.1674-5558.2023.02.013](http://www.dhykz.com/CN/10.3969/j.issn.1674-5558.2023.02.013)  
