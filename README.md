@@ -4,7 +4,7 @@
 
 For the control accuracy and stability of the high dynamic aircraft overload control system, the autopilot design scheme based on angular acceleration feedback is proposed, and the Active Disturbance Rejection Control (ADRC) system and its stability analysis method are designed.
 
-* 1.设计了基于角速度和角加速度反馈的PI两回路控制系统方案。
+### 1.设计了基于角速度和角加速度反馈的PI两回路控制系统方案。
   
 ![image](https://github.com/SJY411/-ADRC-control-system-/blob/main/img/Body%20Coordinate%20System%20and%20Velocity%20Coordinate%20System%20of%20High%20Dynamic%20Aircraft.png)
 图1 高动态飞行器的机体坐标系和速度坐标系  
@@ -24,7 +24,7 @@ Fig.4 two loops in simulink
 
 该部分见ang_acc_control文件。
 
-* 2.基于角加速度反馈设计了自抗扰过载控制方法，并对系统稳定性进行了频域分析。
+### 2.基于角加速度反馈设计了自抗扰过载控制方法，并对系统稳定性进行了频域分析。
  
 关于自抗扰控制（ADRC）建议参考Gao Zhiqiang．Scaling and bandwidth-parameterization based controller turning.  本项目中以高志强老师的LADRC方法为基础，设计了高动态飞行器角加速度反馈的自抗扰控制方法。如下图所示：  
   
@@ -37,7 +37,7 @@ Fig.5 Schematic diagram of angular acceleration feedback active disturbance reje
 
 该部分见ADRC_acc_control文件。 其中ADRC_ang_acc_change.slx用于对比ADRC与传统PI控制，ADRC_ESO_feedback_comparison.slx文件为对比ADRC不同的反馈项对应效果。
 
-* 结论：  
+### 结论：  
 经过仿真校验及稳定性理论分析，得到结论如下：  
 (1)传统的带PI校正的过载控制回路中，**角加速度反馈**的控制方案相比角速度反馈，具有更好的跟踪性能和稳定性；  
 (2)在高动态飞行器过载控制系统中加入自抗扰控制器，可对模型的不确定性及干扰进行补偿，明显**提高**了系统的稳定性能；  
