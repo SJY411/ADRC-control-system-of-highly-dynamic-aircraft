@@ -8,8 +8,8 @@ For the control accuracy and stability of the high dynamic aircraft overload con
 <p align="center"> 
   
 ![image](https://github.com/SJY411/-ADRC-control-system-/blob/main/img/Body%20Coordinate%20System%20and%20Velocity%20Coordinate%20System%20of%20High%20Dynamic%20Aircraft.png)
-图1 高动态飞行器的机体坐标系和速度坐标系
-Fig.1 Body Coordinate System and Velocity Coordinate System of High Dynamic Aircraft
+图1 高动态飞行器的机体坐标系和速度坐标系  
+Fig.1 Body Coordinate System and Velocity Coordinate System of High Dynamic Aircraft  
 </p> 
 
 根据高动态飞行器运动和动力学模型，以纵向通道为例设计了两种反馈控制回路，一种是角速度反馈，另一种是角加速度回路。这两种回路均采用过载控制（过载控制是指通过直接测量和控制机体横向过载及其变化率，以操纵其飞行轨迹并按照预定的弹道飞行），且用PI控制。具体原理如图所示：  
@@ -19,7 +19,8 @@ Fig.1 Body Coordinate System and Velocity Coordinate System of High Dynamic Airc
 ![image](https://github.com/SJY411/-ADRC-control-system-/blob/main/img/%E8%A7%92%E9%80%9F%E5%BA%A6%E6%8E%A7%E5%88%B6%E5%9B%9E%E8%B7%AF%E6%A1%86%E5%9B%BE.png)    
 图2 角速度控制回路  
 Fig.2 Angular velocity control loop  
-
+</p> 
+<p align="center"> 
 ![image](https://github.com/SJY411/-ADRC-control-system-/blob/main/img/%E8%A7%92%E5%8A%A0%E9%80%9F%E5%BA%A6%E6%8E%A7%E5%88%B6%E5%9B%9E%E8%B7%AF%E6%A1%86%E5%9B%BE.png)  
 图3 角加速度控制回路  
 Fig.3 Angular acceleration control loop  
